@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type=phone]{
+            border: 1px solid #ced4da;
+            width: 30pt;
+        }
+    </style>
+    <head>
+        <title>Register</title>
+    </head>
+    <body style="background-color: lightskyblue;padding: 20pt;">
+        <h1>Register</h1>
+        <form>
+            <label for="Frist name">Firstname:</label>
+            <input type="text" id="Frist name" name="Frist name"><br><br>
+            <label for="Middlen name">Middlename:</label>
+            <input type="text" id="Middlen name" name="Middlen name"><br><br>
+            <label for="Last name">Lastname:</label>
+            <input type="text" id="Last name" name="Last name"><br><br>
+            <label for="course">Course:</label>
+            <select id="course">
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+            </select><br><br>
+            <label for="Gender" style="font-weight: bold;">Gender</label><br>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="Gender" value="FeMale">
+            <label for="female">FeMale</label><br>
+            <input type="radio" id="other" name="Gender" value="Other">
+            <label for="other">Other</label><br>
+            <label for="phone">Phone:</label>
+            <input type="phone" name="phone" id="phone">
+            <input type="tel" id="phone" name="phone" placeholder="12-345-678" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" required><br><br>
+            <label for="address">Address</label><br>
+            <textarea rows="5" cols="60" name="text" placeholder="Enter text"></textarea><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="Email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"><br><br>
+            <label for="Re-type password">Re-type password:</label>
+            <input type="Re-type password" name="Re-type password" id="Re-type password"><br><br>   
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
